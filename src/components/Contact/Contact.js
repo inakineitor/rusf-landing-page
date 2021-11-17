@@ -1,5 +1,5 @@
-import * as React from "react"
-import { ContactStyles } from "./ContactStyles"
+import * as React from 'react';
+import { ContactStyles } from './ContactStyles';
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
         </button>
       </form>
     </ContactStyles>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const NavModuleStyles = styled.nav`
   .nav {
@@ -123,4 +123,4 @@ export const NavModuleStyles = styled.nav`
       }
     }
   }
-`
+`;

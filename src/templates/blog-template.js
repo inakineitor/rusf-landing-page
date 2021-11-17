@@ -1,18 +1,18 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
-import Seo from "../components/SEO"
-import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
-import { BlogSingleStyles } from "../components/Blog/BlogStyles"
-import Button from "../components/Button/Button"
+import * as React from 'react';
+import Layout from '../components/Layout';
+import { graphql, Link } from 'gatsby';
+import Seo from '../components/SEO';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
+import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { BlogSingleStyles } from '../components/Blog/BlogStyles';
+import Button from '../components/Button/Button';
 
-const Bold = ({ children }) => <strong>{children}</strong>
-const Italic = ({ children }) => <em>{children}</em>
-const Text = ({ children }) => <p>{children}</p>
+const Bold = ({ children }) => <strong>{children}</strong>;
+const Italic = ({ children }) => <em>{children}</em>;
+const Text = ({ children }) => <p>{children}</p>;
 
 const Blog = ({ data }) => {
-  const { title, published, richText } = data.post
+  const { title, published, richText } = data.post;
 
   const options = {
     renderMark: {
@@ -22,7 +22,7 @@ const Blog = ({ data }) => {
     renderNode: {
       [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
     },
-  }
+  };
 
   return (
     <>
@@ -42,8 +42,8 @@ const Blog = ({ data }) => {
         </section>
       </Layout>
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query getPost($slug: String!) {
@@ -55,6 +55,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Blog
+export default Blog;

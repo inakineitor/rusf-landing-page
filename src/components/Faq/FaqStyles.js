@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const FaqStyles = styled.section`
   .question {
@@ -40,4 +40,4 @@ export const FaqStyles = styled.section`
       transform: rotate(-180deg);
     }
   }
-`
+`;

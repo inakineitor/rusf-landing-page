@@ -1,12 +1,12 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
-import styled from "styled-components"
-import Seo from "../components/SEO"
-import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
-import { StaticImage } from "gatsby-plugin-image"
-import BlogItem from "../components/Blog/BlogItem"
-import BlogItems from "../components/Blog/BlogItems"
+import * as React from 'react';
+import Layout from '../components/Layout';
+import { graphql, Link } from 'gatsby';
+import styled from 'styled-components';
+import Seo from '../components/SEO';
+import SimpleBanner from '../components/SimpleBanner/SimpleBanner';
+import { StaticImage } from 'gatsby-plugin-image';
+import BlogItem from '../components/Blog/BlogItem';
+import BlogItems from '../components/Blog/BlogItems';
 
 const Pagination = styled.aside`
   display: flex;
@@ -32,18 +32,18 @@ const Pagination = styled.aside`
       margin-right: 0;
     }
   }
-`
+`;
 
 const Blog = props => {
-  const { currentPage, numPages } = props.pageContext
+  const { currentPage, numPages } = props.pageContext;
 
-  const isFirst = currentPage === 1
-  const isLast = currentPage === numPages
+  const isFirst = currentPage === 1;
+  const isLast = currentPage === numPages;
 
   const prevPage =
-    currentPage - 1 === 1 ? `/blogs` : `/blogs/${currentPage - 1}`
-  const nextPage = `/blogs/${currentPage + 1}`
-  const { data } = props
+    currentPage - 1 === 1 ? `/blogs` : `/blogs/${currentPage - 1}`;
+  const nextPage = `/blogs/${currentPage + 1}`;
+  const { data } = props;
   return (
     <>
       <Seo title="Blogs" />
@@ -57,7 +57,7 @@ const Blog = props => {
         </SimpleBanner>
         <BlogItems>
           {data.post.edges.map(({ node }) => {
-            return <BlogItem key={node.id} blog={node} />
+            return <BlogItem key={node.id} blog={node} />;
           })}
         </BlogItems>
         {numPages > 1 && (
@@ -72,12 +72,12 @@ const Blog = props => {
               return (
                 <Link
                   key={i}
-                  to={`/blogs/${i === 0 ? "" : i + 1}`}
-                  className={i + 1 === currentPage ? "btn btn-active" : "btn"}
+                  to={`/blogs/${i === 0 ? '' : i + 1}`}
+                  className={i + 1 === currentPage ? 'btn btn-active' : 'btn'}
                 >
                   {i + 1}
                 </Link>
-              )
+              );
             })}
             {!isLast && (
               <Link className="btn" to={nextPage}>
@@ -88,8 +88,8 @@ const Blog = props => {
         )}
       </Layout>
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query getPosts($skip: Int!, $limit: Int!) {
@@ -109,5 +109,5 @@ export const query = graphql`
       }
     }
   }
-`
-export default Blog
+`;
+export default Blog;

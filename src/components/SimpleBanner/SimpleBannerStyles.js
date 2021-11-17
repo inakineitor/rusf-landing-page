@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const SimpleBannerStyles = styled.section`
   height: 70vh;
@@ -47,4 +47,4 @@ export const SimpleBannerStyles = styled.section`
       letter-spacing: -0.5px;
     }
   }
-`
+`;

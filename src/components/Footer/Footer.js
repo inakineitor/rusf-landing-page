@@ -1,7 +1,7 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { menuItems, socialItems } from "../../constants/links"
-import { FooterStyles } from "./FooterStyles"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { menuItems, socialItems } from '../../constants/links';
+import { FooterStyles } from './FooterStyles';
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
                     <span>.</span>
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
@@ -34,13 +34,13 @@ const Footer = () => {
                     {item.icon}
                   </a>
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
         <div className="copyright">
           <p>
-            Designed & developed by{" "}
+            Designed & developed by{' '}
             <a
               href="https://www.morganbaker.dev"
               target="_blank"
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
     </FooterStyles>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

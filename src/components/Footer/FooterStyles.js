@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const FooterStyles = styled.footer`
   background-color: #000;
@@ -114,4 +114,4 @@ export const FooterStyles = styled.footer`
       }
     }
   }
-`
+`;

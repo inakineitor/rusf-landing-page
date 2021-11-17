@@ -1,7 +1,7 @@
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { ProductsStyles } from "./ProductsStyles"
-import Product from "./Product"
+import * as React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { ProductsStyles } from './ProductsStyles';
+import Product from './Product';
 
 const getProducts = graphql`
   query {
@@ -23,23 +23,23 @@ const getProducts = graphql`
       }
     }
   }
-`
+`;
 
 const Features = () => {
-  const response = useStaticQuery(getProducts)
-  const products = response.products.edges
+  const response = useStaticQuery(getProducts);
+  const products = response.products.edges;
 
   return (
     <ProductsStyles>
       <div className="features__container">
         <div className="features__container--scroll">
           {products.map(({ node }) => {
-            return <Product feature={node} />
+            return <Product feature={node} />;
           })}
         </div>
       </div>
     </ProductsStyles>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

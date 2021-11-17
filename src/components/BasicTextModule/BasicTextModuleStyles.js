@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const BasicTextModuleStyles = styled.section`
   padding: 70px var(--borderSpacing);
@@ -58,4 +58,4 @@ export const BasicTextModuleStyles = styled.section`
       font-size: 30px;
     }
   }
-`
+`;

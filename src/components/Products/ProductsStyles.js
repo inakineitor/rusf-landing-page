@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const ProductsStyles = styled.section`
   padding: var(--sectionPadding) var(--borderSpacing);
@@ -188,7 +188,7 @@ export const ProductsStyles = styled.section`
       position: relative;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         width: 30px;
         height: 30px;
@@ -207,4 +207,4 @@ export const ProductsStyles = styled.section`
       }
     }
   }
-`
+`;

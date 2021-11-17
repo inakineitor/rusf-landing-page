@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const BannerModuleStyles = styled.section`
   height: 100vh;
@@ -60,4 +60,4 @@ export const BannerModuleStyles = styled.section`
       margin-top: 30px;
     }
   }
-`
+`;

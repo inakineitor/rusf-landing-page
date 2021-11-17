@@ -1,10 +1,10 @@
-import * as React from "react"
-import { createGlobalStyle } from "styled-components"
-import NavModule from "./NavModule/NavModule"
-import AnimMain from "./AnimMain/AnimMain"
-import Footer from "./Footer/Footer"
-import "@fontsource/heebo"
-import { motion } from "framer-motion"
+import * as React from 'react';
+import { createGlobalStyle } from 'styled-components';
+import NavModule from './NavModule/NavModule';
+import AnimMain from './AnimMain/AnimMain';
+import Footer from './Footer/Footer';
+import '@fontsource/heebo';
+import { motion } from 'framer-motion';
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -175,7 +175,7 @@ button.btn {
   .section-padding--large {
     padding: var(--paddingLarge) var(--paddingBorder);
   }
-`
+`;
 
 const Layout = ({ children }) => {
   return (
@@ -194,7 +194,7 @@ const Layout = ({ children }) => {
         </AnimMain>
       </motion.div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

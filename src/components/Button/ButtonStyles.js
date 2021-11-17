@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const ButtonStyles = styled.button`
   position: relative;
@@ -14,7 +14,7 @@ export const ButtonStyles = styled.button`
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Heebo', sans-serif;
   letter-spacing: -0.5px;
   text-decoration: none;
 
@@ -39,7 +39,7 @@ export const ButtonStyles = styled.button`
   }
 
   &:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     right: 0;
@@ -58,4 +58,4 @@ export const ButtonStyles = styled.button`
       width: 0%;
     }
   }
-`
+`;

@@ -1,25 +1,25 @@
-import React, { useContext } from "react"
-import { Link } from "gatsby"
-import MenuContext from "../MenuContext"
-import { NavModuleStyles } from "./NavModuleStyles"
-import { motion } from "framer-motion"
-import { menuItems } from "./NavConstants"
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+import MenuContext from '../MenuContext';
+import { NavModuleStyles } from './NavModuleStyles';
+import { motion } from 'framer-motion';
+import { menuItems } from './NavConstants';
 import {
   barOneVariants,
   barTwoVariants,
   barThreeVariants,
   menuList,
-} from "./NavAnim"
-import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
+} from './NavAnim';
+import { UseSiteMetadata } from '../../hooks/useSiteMetadata';
 
 const NavModule = () => {
-  const [isOpen, setNav] = useContext(MenuContext)
+  const [isOpen, setNav] = useContext(MenuContext);
 
   const toggleNav = () => {
-    setNav(isOpen => !isOpen)
-  }
+    setNav(isOpen => !isOpen);
+  };
 
-  const { title } = UseSiteMetadata()
+  const { title } = UseSiteMetadata();
 
   return (
     <NavModuleStyles>
@@ -27,10 +27,10 @@ const NavModule = () => {
         <div className="container">
           <motion.button
             initial="closed"
-            animate={isOpen ? "open" : "closed"}
+            animate={isOpen ? 'open' : 'closed'}
             onClick={toggleNav}
-            aria-label={isOpen ? "Close Menu" : "Open Menu"}
-            className={`hamburger${isOpen ? " open" : ""}`}
+            aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
+            className={`hamburger${isOpen ? ' open' : ''}`}
           >
             <motion.span
               className="bar"
@@ -58,9 +58,9 @@ const NavModule = () => {
       </div>
       <motion.div
         initial="closed"
-        animate={isOpen ? "open" : "closed"}
+        animate={isOpen ? 'open' : 'closed'}
         variants={menuList}
-        transition={{ type: "ease", stiffness: 50, velocity: 50 }}
+        transition={{ type: 'ease', stiffness: 50, velocity: 50 }}
         className="menu"
       >
         <ul>
@@ -75,7 +75,7 @@ const NavModule = () => {
         </ul>
       </motion.div>
     </NavModuleStyles>
-  )
-}
+  );
+};
 
-export default NavModule
+export default NavModule;

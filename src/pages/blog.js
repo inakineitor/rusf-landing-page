@@ -1,8 +1,8 @@
-import { StaticImage } from "gatsby-plugin-image"
-import * as React from "react"
-import Layout from "../components/Layout"
-import Seo from "../components/SEO"
-import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
+import { StaticImage } from 'gatsby-plugin-image';
+import * as React from 'react';
+import Layout from '../components/Layout';
+import Seo from '../components/SEO';
+import SimpleBanner from '../components/SimpleBanner/SimpleBanner';
 
 const blog = () => {
   return (
@@ -18,7 +18,7 @@ const blog = () => {
         </SimpleBanner>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default blog
+export default blog;

@@ -1,10 +1,10 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { BlogItemStyles } from "./BlogStyles"
-import Button from "../Button/Button"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { BlogItemStyles } from './BlogStyles';
+import Button from '../Button/Button';
 
 const BlogItem = ({ blog }) => {
-  const { slug, title, published, introduction } = blog
+  const { slug, title, published, introduction } = blog;
   return (
     <BlogItemStyles>
       <h2>
@@ -16,7 +16,7 @@ const BlogItem = ({ blog }) => {
         <p>{published}</p>
       </div>
     </BlogItemStyles>
-  )
-}
+  );
+};
 
-export default BlogItem
+export default BlogItem;

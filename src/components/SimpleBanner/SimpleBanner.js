@@ -1,5 +1,5 @@
-import * as React from "react"
-import { SimpleBannerStyles } from "./SimpleBannerStyles"
+import * as React from 'react';
+import { SimpleBannerStyles } from './SimpleBannerStyles';
 
 const SimpleBanner = ({ children, title }) => {
   return (
@@ -11,13 +11,13 @@ const SimpleBanner = ({ children, title }) => {
           <div className="banner__content">
             <h1>
               {title}
-              <span style={{ color: "var(--primary)" }}>.</span>
+              <span style={{ color: 'var(--primary)' }}>.</span>
             </h1>
           </div>
         </div>
       )}
     </SimpleBannerStyles>
-  )
-}
+  );
+};
 
-export default SimpleBanner
+export default SimpleBanner;

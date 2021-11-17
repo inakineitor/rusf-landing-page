@@ -1,13 +1,13 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import styled from "styled-components"
-import { Link } from "gatsby"
-import Seo from "../components/SEO"
+import * as React from 'react';
+import Layout from '../components/Layout';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import Seo from '../components/SEO';
 
 const Error404 = styled.section`
   background-color: var(--background);
   color: #fff;
-`
+`;
 
 const Title = styled.h1`
   margin-top: 0;
@@ -15,7 +15,7 @@ const Title = styled.h1`
   @media (min-width: 768px) {
     grid-column: 1 / 2;
   }
-`
+`;
 
 const SubContent = styled.div`
   p {
@@ -24,13 +24,13 @@ const SubContent = styled.div`
   @media (min-width: 768px) {
     grid-column: 2 / 3;
   }
-`
+`;
 
 const SubTitle = styled.h2`
   @media (min-width: 768px) {
     margin-top: 0;
   }
-`
+`;
 
 const error = () => {
   return (
@@ -52,7 +52,7 @@ const error = () => {
         </Error404>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default error
+export default error;

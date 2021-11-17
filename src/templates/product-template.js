@@ -1,12 +1,12 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import styled from "styled-components"
-import Faq from "../components/Faq/Faq"
-import Seo from "../components/SEO"
-import BannerModule from "../components/BannerModule/BannerModule"
-import { renderRichText } from "gatsby-source-contentful/rich-text"
+import * as React from 'react';
+import Layout from '../components/Layout';
+import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
+import Faq from '../components/Faq/Faq';
+import Seo from '../components/SEO';
+import BannerModule from '../components/BannerModule/BannerModule';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
 const ProductTemplateStyles = styled.div`
   display: flex;
@@ -41,13 +41,20 @@ const ProductTemplateStyles = styled.div`
       }
     }
   }
-`
+`;
 
 const productTemplate = ({ data }) => {
-  const { name, price, excerpt, productDescription, images, faq } = data.product
+  const {
+    name,
+    price,
+    excerpt,
+    productDescription,
+    images,
+    faq,
+  } = data.product;
 
-  const [mainImage, ...productImages] = images
-  const image = getImage(mainImage)
+  const [mainImage, ...productImages] = images;
+  const image = getImage(mainImage);
 
   return (
     <>
@@ -75,14 +82,14 @@ const productTemplate = ({ data }) => {
                   title={item.title}
                   description={item.description}
                 />
-              )
+              );
             })}
           </div>
         </ProductTemplateStyles>
       </Layout>
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query($slug: String!) {
@@ -102,6 +109,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default productTemplate
+export default productTemplate;

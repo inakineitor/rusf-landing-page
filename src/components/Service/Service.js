@@ -1,7 +1,7 @@
-import * as React from "react"
-import styled from "styled-components"
-import Grid from "../Grid/Grid"
-import services from "../../constants/services"
+import * as React from 'react';
+import styled from 'styled-components';
+import Grid from '../Grid/Grid';
+import services from '../../constants/services';
 
 const ServiceItem = styled.article`
   background-color: #272727;
@@ -23,15 +23,15 @@ const ServiceItem = styled.article`
   p {
     margin-bottom: 0;
   }
-`
+`;
 
 const Service = props => {
   return (
     <section
       className={
         props.largePadding
-          ? "section-padding section-padding--large"
-          : "section-padding"
+          ? 'section-padding section-padding--large'
+          : 'section-padding'
       }
     >
       <Grid>
@@ -41,11 +41,11 @@ const Service = props => {
               <h2>{item.title}</h2>
               <p>{item.text}</p>
             </ServiceItem>
-          )
+          );
         })}
       </Grid>
     </section>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

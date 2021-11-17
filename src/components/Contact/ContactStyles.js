@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const ContactStyles = styled.section`
   padding: var(--sectionPadding) var(--borderSpacing);
@@ -23,7 +23,7 @@ export const ContactStyles = styled.section`
     width: 100%;
     font-size: 1rem;
     font-weight: 900;
-    font-family: "Heebo", sans-serif;
+    font-family: 'Heebo', sans-serif;
     padding: 15px;
     transition: border-bottom-color 0.3s;
 
@@ -50,4 +50,4 @@ export const ContactStyles = styled.section`
   textarea {
     margin-bottom: 2.125rem;
   }
-`
+`;

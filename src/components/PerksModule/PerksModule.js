@@ -1,7 +1,7 @@
-import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { PerksModuleStyles } from "./PerksModuleStyles"
-import Perk from "./Perk"
+import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import { PerksModuleStyles } from './PerksModuleStyles';
+import Perk from './Perk';
 
 const PerksModule = () => {
   return (
@@ -50,7 +50,7 @@ const PerksModule = () => {
         </Perk>
       </div>
     </PerksModuleStyles>
-  )
-}
+  );
+};
 
-export default PerksModule
+export default PerksModule;

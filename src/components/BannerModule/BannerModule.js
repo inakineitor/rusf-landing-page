@@ -1,13 +1,13 @@
-import * as React from "react"
-import { Link, navigate } from "gatsby"
-import { BannerModuleStyles } from "./BannerModuleStyles"
-import { StaticImage } from "gatsby-plugin-image"
-import { MdArrowDownward as Arrow } from "react-icons/md"
-import Button from "../Button/Button"
+import * as React from 'react';
+import { Link, navigate } from 'gatsby';
+import { BannerModuleStyles } from './BannerModuleStyles';
+import { StaticImage } from 'gatsby-plugin-image';
+import { MdArrowDownward as Arrow } from 'react-icons/md';
+import Button from '../Button/Button';
 
 const BannerModule = ({ children, title, subTitle, price, enquire }) => {
   function scrollToArea() {
-    navigate("#topContent")
+    navigate('#topContent');
   }
 
   return (
@@ -31,14 +31,14 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
             {title && (
               <h1>
                 {title}
-                <span style={{ color: "var(--primary)" }}>.</span>
+                <span style={{ color: 'var(--primary)' }}>.</span>
               </h1>
             )}
             {subTitle && <h2>{subTitle}</h2>}
             {price && (
               <h2 className="price">
                 £{price}
-                <span style={{ color: "var(--primary)" }}>.</span>
+                <span style={{ color: 'var(--primary)' }}>.</span>
               </h2>
             )}
             {enquire && <Button text="Enquire Now" as={Link} to="/contact" />}
@@ -50,7 +50,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
       </BannerModuleStyles>
       <span id="topContent"></span>
     </>
-  )
-}
+  );
+};
 
-export default BannerModule
+export default BannerModule;

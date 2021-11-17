@@ -1,11 +1,11 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import Button from "../Button/Button"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import Button from '../Button/Button';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Feature = ({ feature }) => {
-  const { name, slug, images, excerpt } = feature
-  const image = getImage(images[0])
+  const { name, slug, images, excerpt } = feature;
+  const image = getImage(images[0]);
 
   return (
     <aside className="features__item">
@@ -22,7 +22,7 @@ const Feature = ({ feature }) => {
         </div>
       </Link>
     </aside>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

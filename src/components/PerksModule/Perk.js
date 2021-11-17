@@ -1,5 +1,5 @@
-import * as React from "react"
-import { PerkStyles } from "./PerksModuleStyles"
+import * as React from 'react';
+import { PerkStyles } from './PerksModuleStyles';
 
 const Perk = ({ children, title, content }) => {
   return (
@@ -8,7 +8,7 @@ const Perk = ({ children, title, content }) => {
       {title && <h2>{title}</h2>}
       {content && <p>{content}</p>}
     </PerkStyles>
-  )
-}
+  );
+};
 
-export default Perk
+export default Perk;
