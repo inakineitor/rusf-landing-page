@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
+import { motion } from 'framer-motion';
+
 import MenuContext from '../MenuContext';
 import { NavModuleStyles } from './NavModuleStyles';
-import { motion } from 'framer-motion';
 import { menuItems } from './NavConstants';
 import {
   barOneVariants,
@@ -11,6 +12,7 @@ import {
   menuList,
 } from './NavAnim';
 import { UseSiteMetadata } from '../../hooks/useSiteMetadata';
+import fundLogo from '../../images/logos/rnef-logo.svg';
 
 const NavModule = () => {
   const [isOpen, setNav] = useContext(MenuContext);
@@ -49,6 +51,10 @@ const NavModule = () => {
           {title && (
             <div className="logo">
               <Link to="/">
+                <img
+                  src={fundLogo}
+                  alt="RNEF Logo"
+                />
                 {title}
                 <span>.</span>
               </Link>

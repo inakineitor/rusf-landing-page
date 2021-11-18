@@ -54,6 +54,14 @@ export const NavModuleStyles = styled.nav`
       color: #fff;
       text-decoration: none;
       transition: color 0.3s ease;
+
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 2em;
+        margin-right: 0.25em;
+      }
     }
 
     @media (min-width: 1024px) {

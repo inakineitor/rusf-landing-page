@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProductsStyles = styled.section`
+export const AdvisorsStyles = styled.section`
   padding: var(--sectionPadding) var(--borderSpacing);
   color: #fff;
   background-color: #000;

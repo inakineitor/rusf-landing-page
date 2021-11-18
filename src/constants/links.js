@@ -12,8 +12,8 @@ export const menuItems = [
     text: 'home',
   },
   {
-    path: '/products',
-    text: 'products',
+    path: '/advisors',
+    text: 'advisors',
   },
   {
     path: '/blog',
@@ -26,20 +26,20 @@ export const menuItems = [
 ];
 
 export const socialItems = [
+  // {
+  //   path: 'www.facebook.com',
+  //   icon: <Facebook />,
+  // },
+  // {
+  //   path: 'www.twitter.com',
+  //   icon: <Twitter />,
+  // },
+  // {
+  //   path: 'www.instagram.com',
+  //   icon: <Instagram />,
+  // },
   {
-    path: 'www.facebook.com',
-    icon: <Facebook />,
-  },
-  {
-    path: 'www.twitter.com',
-    icon: <Twitter />,
-  },
-  {
-    path: 'www.instagram.com',
-    icon: <Instagram />,
-  },
-  {
-    path: 'www.linkedin.com',
+    path: 'https://www.linkedin.com/company/rice-new-energy-fund/',
     icon: <Linkedin />,
   },
 ];

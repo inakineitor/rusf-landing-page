@@ -48,6 +48,14 @@ const Footer = () => {
             >
               Morgan Baker
             </a>
+            {' '}&{' '}
+            <a
+              href="https://www.linkedin.com/in/inaki-arango/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Iñaki Arango
+            </a>
             <span>.</span>
           </p>
         </div>

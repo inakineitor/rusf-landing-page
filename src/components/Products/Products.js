@@ -29,12 +29,14 @@ const Features = () => {
   const response = useStaticQuery(getProducts);
   const products = response.products.edges;
 
+  console.log(products);
+
   return (
     <ProductsStyles>
       <div className="features__container">
         <div className="features__container--scroll">
           {products.map(({ node }) => {
-            return <Product feature={node} />;
+            return <Product key={node.contentful_id} feature={node} />;
           })}
         </div>
       </div>

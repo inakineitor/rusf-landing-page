@@ -8,12 +8,12 @@ require('dotenv').config({
 });
 module.exports = {
   siteMetadata: {
-    title: 'Rice Undergraduate Sustainability Fund',
-    description: 'A super-fast site using GatsbyJS',
+    title: 'Rice New Energy Fund',
+    description: 'The nation’s first new energy focused student-managed investment fund',
     author: 'Iñaki Arango',
     twitterUsername: '@inaki_arango',
     image: '/yellow-metal-design-decoration.jpg',
-    siteUrl: 'https://barcadia.netlify.com',
+    siteUrl: 'https://rnef.gatsbyjs.io',
   },
   /* Your site config here */
   plugins: [
@@ -44,8 +44,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://barcadia.netlify.com',
-        sitemap: 'https://barcadia.netlify.com/sitemap.xml',
+        host: 'https://rnef.gatsbyjs.io',
+        sitemap: 'https://rnef.gatsbyjs.io/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

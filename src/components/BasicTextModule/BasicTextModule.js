@@ -8,15 +8,12 @@ const BasicTextModule = () => {
     <BasicTextModuleStyles>
       <div className="container">
         <h2>
-          A super-fast theme that is easy to get started, using the power of
-          GatsbyJS
+          We are at the heart of the Energy Revolution
         </h2>
         <p style={{ marginBottom: '60px' }}>
-          Using modern CSS properties such as grid, this theme is optmised for
-          speed and mobile devices. Giving users an excellent experience on any
-          device. Future-proofing your product.
+          Situated in Houston, Texas, Rice University bla bla bla. Enter text about purpose of the fund. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </p>
-        <Button text="View Products" as={Link} to="/products" />
+        <Button text="View Advisors" as={Link} to="/advisors" />
       </div>
     </BasicTextModuleStyles>
   );
