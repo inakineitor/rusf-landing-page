@@ -14,7 +14,7 @@ const HowToJoinModule = () => {
         <Button
           text="Join"
           as={Link}
-          to="https://www.google.com/search?q=google+form&oq=google+form&aqs=chrome..69i57j69i64l3j69i60l2.1176j0j9&sourceid=chrome&ie=UTF-8"
+          to="https://forms.gle/ztWPQyzq3YNcksoW8"
         />
       </div>
     </HowToJoinModuleStyles>
