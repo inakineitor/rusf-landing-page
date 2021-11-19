@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Advisor from './Advisor';
-import { AdvisorsStyles } from './AdvisorsStyles';
+import { AdvisorsStyles } from '../Advisors/AdvisorsStyles';
+import Advisor from '../Advisors/Advisor';
 
-const getAdvisors = graphql`
+const getMembers = graphql`
   query {
-    advisors: allContentfulAdvisors {
+    featuredMembers: allContentfulMembers(
+      filter: { featured: { eq: true } }
+    ) {
       edges {
         node {
           name
@@ -21,15 +23,15 @@ const getAdvisors = graphql`
   }
 `;
 
-const Advisors = () => {
-  const response = useStaticQuery(getAdvisors);
-  const advisors = response.advisors.edges;
+const Members = () => {
+  const response = useStaticQuery(getMembers);
+  const members = response.featuredMembers.edges;
 
   return (
     <AdvisorsStyles>
       <div className="features__container">
         <div className="features__container--scroll">
-          {advisors.map(({ node }) => {
+          {members.map(({ node }) => {
             return <Advisor key={node.contentful_id} feature={node} />;
           })}
         </div>
@@ -38,4 +40,4 @@ const Advisors = () => {
   );
 };
 
-export default Advisors;
+export default Members;

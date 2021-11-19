@@ -14,6 +14,9 @@ const PerksModule = () => {
         placeholder="tracedSVG"
       />
       <div className="perks__image--overlay"></div>
+      <div className="perks_image--title">
+        <h2>Core Values</h2>
+      </div>
       <div className="container">
         <Perk
           title="Generate Returns"

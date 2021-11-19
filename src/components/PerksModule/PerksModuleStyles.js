@@ -27,6 +27,17 @@ export const PerksModuleStyles = styled.section`
     background-color: rgba(0, 0, 0, 0.65);
   }
 
+  > .perks_image--title {
+    position: relative;
+
+    h2 {
+      color: var(--primary);
+      font-size: 2em;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+  }
+
   > .container {
     position: relative;
 

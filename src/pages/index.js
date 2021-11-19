@@ -4,7 +4,7 @@ import Seo from '../components/SEO';
 import BannerModule from '../components/BannerModule/BannerModule';
 import PerksModule from '../components/PerksModule/PerksModule';
 import Perk from '../components/PerksModule/Perk';
-import Features from '../components/Features/Features';
+import Members from '../components/Members/Members';
 import UsaMapModule from '../components/UsaMapModule/UsaMapModule';
 import PurposeTextModule from '../components/PurposeTextModule/PurposeTextModule';
 import HowToJoinModule from '../components/HowToJoinModule/HowToJoinModule';
@@ -23,7 +23,7 @@ const Index = () => {
           <Perk title="The Title" content="The content" />
         </PerksModule>
         <UsaMapModule />
-        <Features />
+        <Members />
         <HowToJoinModule />
       </Layout>
     </>
