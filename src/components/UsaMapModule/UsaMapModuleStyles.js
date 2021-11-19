@@ -33,9 +33,10 @@ export const UsaMapModuleStyles = styled.section`
     }
   }
 
-  .map-container {
+  .map {
+    width: 90vw;
     @media (min-width: 768px) {
-      width: 44vw;
+      width: 40vw;
     }
   }
 

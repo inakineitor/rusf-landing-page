@@ -15,10 +15,10 @@ export const menuItems = [
     path: '/advisors',
     text: 'advisors',
   },
-  {
-    path: '/blog',
-    text: 'blog',
-  },
+  // {
+  //   path: '/blog', // TODO uncomment once blog is finished
+  //   text: 'blog',
+  // },
   {
     path: '/contact',
     text: 'contact',

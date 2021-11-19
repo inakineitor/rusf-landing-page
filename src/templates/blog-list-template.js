@@ -48,7 +48,7 @@ const Blog = props => {
     <>
       <Seo title="Blogs" />
       <Layout>
-        <SimpleBanner title="Trade news">
+        <SimpleBanner title="Articles">
           <StaticImage
             className="banner__image"
             src="../images/iphone-camera.jpg"

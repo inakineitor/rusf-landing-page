@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Button from '../Button/Button';
 import { UsaMapModuleStyles } from './UsaMapModuleStyles';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 import usaMap from '../../images/usa-map-outline.svg'
 import { Link } from 'gatsby';
 
@@ -18,9 +18,7 @@ const UsaMapModule = () => {
               Situated in Houston, Texas, Rice University bla bla bla. We have a collection of experienced advisors bla bla bla.
             </p>
           </div>
-          <div className="map-container">
-            <img src={usaMap} alt="Houston in USA Map" />
-          </div>
+          <img className="map" src={usaMap} alt="Houston in USA Map" />
         </div>
         <div>
           <Button text="View Advisors" as={Link} to="/advisors" />
