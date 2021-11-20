@@ -13,8 +13,8 @@ const products = () => {
         <SimpleBanner title="All Advisors">
           <StaticImage
             className="banner__image"
-            src="../images/iphone-face-down.jpg"
-            alt="Apple iPhone face down"
+            src="../images/abstract-building.jpg"
+            alt="Abstract Building"
           />
         </SimpleBanner>
         <Features />
