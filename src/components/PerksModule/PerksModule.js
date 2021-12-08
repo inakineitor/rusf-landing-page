@@ -30,7 +30,7 @@ const PerksModule = () => {
           /> */}
         </Perk>
         <Perk
-          title="Increasing Exposure"
+          title="Increase Exposure"
           content="Increase exposure to energy transition among students from diverse backgrounds, producing the energy, and impact finance leaders of the future"
         >
           {/* <StaticImage
