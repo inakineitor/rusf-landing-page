@@ -15,7 +15,7 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="We are in the midst of an energy revolution"
+          title="We are amidst an energy revolution"
           subTitle="Introducing the nation’s first new energy focused student-managed investment fund"
         />
         <PurposeTextModule />
