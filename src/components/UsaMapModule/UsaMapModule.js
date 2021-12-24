@@ -15,7 +15,7 @@ const UsaMapModule = () => {
               We are at the heart of the Energy Revolution
             </h2>
             <p style={{ marginBottom: '60px' }}>
-              Located in Houston, Texas, Rice University has historically produced the leaders of energy finance. We have a network of experienced advisors across the entire capital space.
+              Located in Houston, Texas, Rice University has historically produced the leaders of energy finance. We have a network of experienced advisors across the entire value chain.
             </p>
           </div>
           <img className="map" src={usaMap} alt="Houston in USA Map" />
